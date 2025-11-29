@@ -1,0 +1,26 @@
+fastapi
+uvicorn[standard]
+
+SQLAlchemy
+psycopg2-binary          # Postgres driver
+
+pydantic
+pydantic_settings          # for settings management
+python-dotenv
+
+redis                    # for snapshots / caching
+httpx                    # for calling Azure OpenAI, Soniox, Murf, etc.
+
+twilio
+passlib[bcrypt]==1.7.4
+bcrypt==4.3.0     # for password hashing
+python-jose # for JWT tokens
+
+# Voice services dependencies
+websockets               # for real-time STT/TTS WebSocket connections
+aiofiles                 # for async file operations
+python-multipart         # for file uploads in FastAPI
+numpy                    # for audio processing and VAD
+openai
+tenacity
+# alembic                  # migrations (optional but recommended)
